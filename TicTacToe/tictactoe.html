@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+td
+{
+	height:80px;
+	width:80px;
+	font-size: 45pt;
+	text-align: center;
+}
+body{
+	width:550px;
+	margin:auto;
+	background-color:#DBB1CD;
+}
+h1
+{
+	color:  white;
+	border-bottom:2px solid pink;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+}
+#gameon{
+	color: white;
+	border-bottom:2px solid pink;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+#resetbtn {
+
+		border-radius: 8px;
+		padding: 8px 16px;
+		background-color: #008CBA;
+		border=grey;
+		font-size : 14px;
+		width: 30%;
+		height: 60px;
+
+}
+
+#btntext {
+		color: white;
+		text-align: center;
+
+}
+#message
+{
+	color: white;
+	font-size:25px;
+}
+</style>
+
+
+</head>
+<body onload="startGame();"  background="https://images.cdn3.stockunlimited.net/preview1300/tic-tac-toe-pattern-background_1242337.jpg">
+<h1 id="gameoff" >Play Tic-Tae-Toe </h1>
+<h1 id="gameon" > The game is on. . . </h1>
+<br/>
+<div id="message">Messages here</div>
+<table border="3" bgcolor="pink" >
+<tr>
+<td  id="s1" onClick="nextMove(this)"></td>
+<td id="s2" onClick="nextMove(this)"></td>
+<td id="s3" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s4" onClick="nextMove(this)"></td>
+<td id="s5" onClick="nextMove(this)"></td>
+<td id="s6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s7" onClick="nextMove(this)"></td>
+<td id="s8" onClick="nextMove(this)"></td>
+<td id="s9" onClick="nextMove(this)"></td>
+</tr>
+</table>
+<br><br>
+<form action="javascript: startGame();">
+<button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
+</form>
+<script src="sc.js"></script>
+</body>
+</html>
