@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+td
+{
+	height:80px;
+	width:80px;
+	font-size: 45pt;
+	text-align: center;
+}
+body{
+	width:550px;
+	margin:auto;
+	background-color:#DBB1CD;
+}
+h1
+{
+	border-bottom:2px solid black;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+}
+#message
+{
+	font-size:25px;
+}
+</style>
+</head>
+<body onload="startGame();">
+<h1>The game is on..</h1>
+<div id="message">Messages here</div>
+<table border="3">
+<tr>
+<td id="s1" onClick="nextMove(this)"></td>
+<td id="s2" onClick="nextMove(this)"></td>
+<td id="s3" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s4" onClick="nextMove(this)"></td>
+<td id="s5" onClick="nextMove(this)"></td>
+<td id="s6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td id="s7" onClick="nextMove(this)"></td>
+<td id="s8" onClick="nextMove(this)"></td>
+<td id="s9" onClick="nextMove(this)"></td>
+</tr>
+</table>
+<br><br>
+<form action="javascript: startGame();">
+<button name="reset">RESET THE GAME</button>
+</form>
+<script src="sc.js"></script>
+</body>
+</html>
