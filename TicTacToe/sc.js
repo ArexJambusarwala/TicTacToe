@@ -8,12 +8,15 @@ function startGame(){
 	setMessage(document.turn+" gets to start");
 }
 
+<<<<<<< HEAD
 
 document.getElementById("gameon").style.display="none";
 function textChange()
 {
 		document.getElementById("gameon").style.display="block";
 }
+=======
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917
 function setMessage(msg)
 {
 	document.getElementById("message").innerText=msg;
@@ -30,7 +33,11 @@ function nextMove(td)
 		setMessage("Game's a draw! This calls for a tiebreaker!");
 	}
 	else if(td.innerText==''){
+<<<<<<< HEAD
 	td.innerText=document.turn;
+=======
+	td.innerText=document.turn;	
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917
 	switchTurn();
 	}
 	else
@@ -109,4 +116,8 @@ function getbox(number)
 function clearBox(number)
 {
 	document.getElementById("s"+number).innerText='';
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917

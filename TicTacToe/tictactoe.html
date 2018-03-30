@@ -17,12 +17,17 @@ body{
 }
 h1
 {
+<<<<<<< HEAD
 	color:  white;
 	border-bottom:2px solid pink;
+=======
+	border-bottom:2px solid black;
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917
 	border-left:10px;
 	font-family: 'Raleway', sans-serif;
 	text-align:center;
 }
+<<<<<<< HEAD
 #gameon{
 	color: white;
 	border-bottom:2px solid pink;
@@ -64,6 +69,20 @@ h1
 <table border="3" bgcolor="pink" >
 <tr>
 <td  id="s1" onClick="nextMove(this)"></td>
+=======
+#message
+{
+	font-size:25px;
+}
+</style>
+</head>
+<body onload="startGame();">
+<h1>The game is on..</h1>
+<div id="message">Messages here</div>
+<table border="3">
+<tr>
+<td id="s1" onClick="nextMove(this)"></td>
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917
 <td id="s2" onClick="nextMove(this)"></td>
 <td id="s3" onClick="nextMove(this)"></td>
 </tr>
@@ -80,8 +99,16 @@ h1
 </table>
 <br><br>
 <form action="javascript: startGame();">
+<<<<<<< HEAD
 <button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
 </form>
 <script src="sc.js"></script>
 </body>
 </html>
+=======
+<button name="reset">RESET THE GAME</button>
+</form>
+<script src="sc.js"></script>
+</body>
+</html>
+>>>>>>> d358308ffb9b3f95aeb159a4fd985138717cf917
