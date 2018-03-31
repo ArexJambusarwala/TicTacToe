@@ -19,7 +19,6 @@ h1
 {
 	color:  white;
 	border-bottom:2px solid pink;
-	border-bottom:2px solid black;
 	border-left:10px;
 	font-family: 'Raleway', sans-serif;
 	text-align:center;
@@ -51,8 +50,6 @@ h1
 #message
 {
 	color: white;
-#message
-{
 	font-size:25px;
 }
 </style>
@@ -63,11 +60,6 @@ h1
 <br/>
 <div id="message">Messages here</div>
 <table border="3" bgcolor="pink" >
-
-<body onload="startGame();">
-<h1>The game is on..</h1>
-<div id="message">Messages here</div>
-<table border="3">
 <tr>
 <td id="s1" onClick="nextMove(this)"></td>
 <td id="s2" onClick="nextMove(this)"></td>
@@ -87,11 +79,6 @@ h1
 <br><br>
 <form action="javascript: startGame();">
 <button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
-</form>
-<script src="sc.js"></script>
-</body>
-</html>
-<button name="reset">RESET THE GAME</button>
 </form>
 <script src="sc.js"></script>
 </body>

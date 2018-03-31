@@ -5,7 +5,6 @@ function startGame(){
 	}
 	document.turn="X";	//global variables for turn and winner
 	document.winner=null;
-	document.draw=null;
 	setMessage(document.turn+" gets to start");
 }
 
@@ -35,9 +34,6 @@ function nextMove(td)
 		td.innerText=document.turn;
 		td.innerText=document.turn;
 		switchTurn();
-
-	td.innerText=document.turn;	
-	switchTurn();
 	}
 	else
 	{
@@ -116,4 +112,3 @@ function clearBox(number)
 {
 	document.getElementById("s"+number).innerText='';
 }
-
