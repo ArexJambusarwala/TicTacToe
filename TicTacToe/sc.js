@@ -9,6 +9,13 @@ function startGame(){
 	setMessage(document.turn+" gets to start");
 }
 
+
+document.getElementById("gameon").style.display="none";
+function textChange()
+{
+		document.getElementById("gameon").style.display="block";
+}
+
 function setMessage(msg)
 {
 	document.getElementById("message").innerText=msg;
@@ -25,8 +32,9 @@ function nextMove(td)
 		setMessage("Game's a draw! This calls for a tiebreaker!");
 	}
 	else if(td.innerText==''){
-	td.innerText=document.turn;	
-	switchTurn();
+		td.innerText=document.turn;
+		td.innerText=document.turn;
+		switchTurn();
 	}
 	else
 	{

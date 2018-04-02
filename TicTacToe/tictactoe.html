@@ -17,21 +17,49 @@ body{
 }
 h1
 {
-	border-bottom:2px solid black;
+	color:  white;
+	border-bottom:2px solid pink;
 	border-left:10px;
 	font-family: 'Raleway', sans-serif;
 	text-align:center;
 }
+#gameon{
+	color: white;
+	border-bottom:2px solid pink;
+	border-left:10px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+#resetbtn {
+
+		border-radius: 8px;
+		padding: 8px 16px;
+		background-color: #008CBA;
+		border=grey;
+		font-size : 14px;
+		width: 30%;
+		height: 60px;
+
+}
+
+#btntext {
+		color: white;
+		text-align: center;
+
+}
 #message
 {
+	color: white;
 	font-size:25px;
 }
 </style>
 </head>
-<body onload="startGame();">
-<h1>The game is on..</h1>
+<body onload="startGame();"  background="https://images.cdn3.stockunlimited.net/preview1300/tic-tac-toe-pattern-background_1242337.jpg">
+<h1 id="gameoff" >Play Tic-Tae-Toe </h1>
+<h1 id="gameon" > The game is on. . . </h1>
+<br/>
 <div id="message">Messages here</div>
-<table border="3">
+<table border="3" bgcolor="pink" >
 <tr>
 <td id="s1" onClick="nextMove(this)"></td>
 <td id="s2" onClick="nextMove(this)"></td>
@@ -50,7 +78,7 @@ h1
 </table>
 <br><br>
 <form action="javascript: startGame();">
-<button name="reset">RESET THE GAME</button>
+<button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
 </form>
 <script src="sc.js"></script>
 </body>
