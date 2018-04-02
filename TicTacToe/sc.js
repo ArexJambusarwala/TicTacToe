@@ -5,6 +5,7 @@ function startGame(){
 	}
 	document.turn="X";	//global variables for turn and winner
 	document.winner=null;
+	document.draw=null;
 	setMessage(document.turn+" gets to start");
 }
 
