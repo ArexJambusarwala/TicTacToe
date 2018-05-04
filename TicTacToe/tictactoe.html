@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Tic Tac Toe</title>
+<link rel="stylesheet" href="reset.css" >
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 td
@@ -52,15 +53,27 @@ h1
 	color: white;
 	font-size:25px;
 }
+#resetScore
+{
+	border-radius: 8px;
+	padding: 8px 16px;
+	background-color: grey;
+	border:grey;
+	font-size : 14px;
+	width: 30%;
+	height: 60px;
+	color: white;
+}
 </style>
 </head>
 <body onload="startGame();"  background="https://images.cdn3.stockunlimited.net/preview1300/tic-tac-toe-pattern-background_1242337.jpg">
 <h1 id="gameoff" >Play Tic-Tae-Toe </h1>
 <h1 id="gameon" > The game is on. . . </h1>
 <br/>
-<h1>Score Card(X vs O):<span id="p1">0</span>-<span id="p2">0</span>	
+<h1>Score Card(X vs O):<span id="p1">0</span>-<span id="p2">0</span>
 <div id="message">Messages here</div>
-<table border="3" bgcolor="pink" >
+<div align="center">
+<table border="3" bgcolor="pink"  >
 <tr>
 <td id="s1" onClick="nextMove(this)"></td>
 <td id="s2" onClick="nextMove(this)"></td>
@@ -77,11 +90,15 @@ h1
 <td id="s9" onClick="nextMove(this)"></td>
 </tr>
 </table>
+
+</div>
 <br><br>
-<button id="resetScore">Reset Score</button>	
+<div>
+<button type="button" id="resetScore">Reset Score</button>
+</div>
 <form action="javascript: startGame();">
-<button  id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
-</form>
+<button  type="button " id="resetbtn" name="reset" onclick="textChange();" ><p id="btntext">RESET THE GAME</p></button>
+
 <script src="sc.js"></script>
 </body>
 </html>
