@@ -1,3 +1,4 @@
+var p1=0,p2=0;
 function startGame(){
 	for(var i=1;i<=9;i++)
 	{
@@ -8,6 +9,16 @@ function startGame(){
 	document.draw=null;
 	setMessage(document.turn+" gets to start");
 }
+var player1=document.querySelector("#p1");
+var player2=document.querySelector("#p2");
+var resetScore=document.querySelector("#resetScore");
+
+resetScore.addEventListener("click",function(){
+   p1=0;
+   p2=0;
+   player1.textContent=p1;
+   player2.textContent=p2;
+});
 
 
 document.getElementById("gameon").style.display="none";
@@ -48,6 +59,12 @@ function switchTurn()
 	{
 		setMessage(document.turn+" wins");
 		document.winner=document.turn;
+		if(document.turn=="X")
+          {p1++;
+        player1.textContent=p1;}
+          else
+          {p2++;
+        player2.textContent=p2;}
 	}
 	else if(checkDraw())
 	{
